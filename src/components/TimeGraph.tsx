@@ -44,7 +44,7 @@ export default function TimeGraph() {
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis
           dataKey="hour"
-          label={{ value: "Hour", position: "insideBottomRight", offset: -10 }}
+          label={{ value: "Time", position: "insideBottomRight", offset: -10 }}
           tickFormatter={(tick) => {
             const date = new Date(tick * 1000);
             return date.toLocaleDateString();
